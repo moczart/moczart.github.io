@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kalam&family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
+
+html {
+    margin: 0;
+    padding-right: 26px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Quantico', sans-serif;
+    background-image: linear-gradient(to right, rgb(235, 108, 108), rgb(240, 181, 72), rgb(243, 243, 135), rgb(90, 222, 90), rgb(113, 113, 242), rgb(105, 56, 141), rgb(167, 133, 167));
+}
+
+#content {
+    margin-top: 11px;
+}
+
+.col {
+    text-align: center;
+    border: 2px groove;
+    border-top-left-radius: 22%;
+    border-bottom-right-radius: 22px;
+}
+
+p {
+    text-align: center;
+    padding: 25px;
+    line-height: 2em;
+}
+
+.pause {
+    margin-top: 22px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: navy;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: small;
+    padding: 11px;
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 88px;
+}
+
+.contacts {
+    padding: 11px;
+}
+
+.kompetencia {
+    margin-top: 44px;
+}
+
+hr {
+    width: 40%;
+}
