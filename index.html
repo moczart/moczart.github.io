@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'cormorant garamound', serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Navigáció */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f0f6fc;
+        }
+
+        .logo span {
+            color: #58a6ff;
+        }
+
+        /* Hero szekció */
+        .hero {
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #f0f6fc;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            border-color: #58a6ff;
+            color: #8c8c8c;
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: 1px solid #8c8c8c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            COLOR: #ffffff;
+            border-color: #58a6ff;
+        }
+
+        /* Projektek */
+        .projects {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #f0f6fc;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+            color: #FFFFFF;
+        }
+        .card a {
+            text-decoration: none;
+        }   
+
+        .card h3 {
+            color: #8c8c8c;;
+            margin-bottom: 10px;
+        }
+        .card h3:hover {
+            color: #FFFFFF;
+        }
+
+        .card p {
+            color: #8b949e;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #21262d;
+            color: #58a6ff;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 20px;
+        }
+
+        /* Lábléc */
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #21262d;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo"><img src="logo.webp" width="280" height="120" alt="MóczArt Logo"></div>
+        </header>
+
+        <section class="hero">
+            <h1>ÉLETUTAM</h1>
+            <p>SAJÁT UTAM A TERMÉSZET CSENDJÉBEN</p>
+            <a href="mailto:info@moczart.com" class="btn">Kapcsolat</a>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Magánélet & Munka</h2>
+            <div class="grid">
+                
+                <!-- 1. Projekt -->
+                <div class="card">
+                    <a href="https://www.moczart.de" target="_blank">
+                        <h3>Deutschland</h3>
+                    </a>
+                    <div class="tags">
+                        <span class="tag">Persönliche Website</span>
+                    </div>
+                </div>
+
+                <!-- 2. Projekt -->
+                <div class="card">
+                    <a href="https://www.moczart.com" target="_blank">
+                        <h3>Magyarország</h3>
+                    </a>
+                    <div class="tags">
+                        <span class="tag">Személyes weboldal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 MóczArt | Minden jog fenntartva.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
