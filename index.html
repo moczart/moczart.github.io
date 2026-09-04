@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mócz Zoltán</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background-color: #0b0f17;
+            color: #c9d1d9;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* FEJLÉC */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border-bottom: 1px solid #21262d;
+
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+
+        .logo h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.08em;
+            color: #f0f6fc;
+        }
+
+        .logo span {
+            color: #58a6ff;
+        }
+
+        /* NYELVVÁLTÓ */
+
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+        }
+
+        .language-switcher a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .language-switcher a:hover {
+            color: #58a6ff;
+        }
+
+        .language-divider {
+            color: #30363d;
+        }
+
+        /* HERO */
+
+        .hero {
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #f0f6fc;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-bottom: 25px;
+        }
+
+        /* KAPCSOLAT */
+
+        .btn {
+            display: inline-block;
+
+            color: #8c8c8c;
+            text-decoration: none;
+
+            padding: 10px 20px;
+
+            border: 1px solid #8c8c8c;
+            border-radius: 6px;
+
+            font-weight: 600;
+
+            transition:
+                color 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            border-color: #58a6ff;
+        }
+
+        /* PROJEKTEK */
+
+        .projects {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #f0f6fc;
+
+            margin-bottom: 30px;
+
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #161b22;
+
+            border: 1px solid #30363d;
+            border-radius: 6px;
+
+            padding: 25px;
+
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card h3 {
+            color: #8c8c8c;
+            margin-bottom: 10px;
+        }
+
+        .card h3:hover {
+            color: #ffffff;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #21262d;
+            color: #58a6ff;
+
+            font-size: 0.75rem;
+
+            padding: 3px 8px;
+
+            border-radius: 20px;
+        }
+
+        /* LÁBLÉC */
+
+        footer {
+            text-align: center;
+
+            padding-top: 40px;
+
+            border-top: 1px solid #21262d;
+
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        /* MOBIL */
+
+        @media (max-width: 600px) {
+
+            header {
+                align-items: flex-start;
+            }
+
+            .logo h1 {
+                font-size: 2.5rem;
+            }
+
+            .language-switcher {
+                margin-top: 8px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="logo">
+                <h1><span>MÓCZ</span> ZOLTÁN</h1>
+            </div>
+
+            <nav class="language-switcher" aria-label="Nyelvválasztás">
+                <a href="index.html">HU</a>
+
+                <span class="language-divider">|</span>
+
+                <a href="home.html">EN</a>
+            </nav>
+
+        </header>
+
+
+        <section class="hero">
+
+            <h1>ÉLETUTAM</h1>
+
+            <p>
+                SAJÁT UTAM A TERMÉSZET CSENDJÉBEN
+            </p>
+
+            <a href="mailto:info@moczart.com" class="btn">
+                Kapcsolat
+            </a>
+
+        </section>
+
+
+        <section class="projects">
+
+            <h2 class="section-title">
+                Magánélet &amp; Munka
+            </h2>
+
+            <div class="grid">
+
+                <div class="card">
+
+                    <a href="https://www.moczart.de" target="_blank" rel="noopener noreferrer">
+                        <h3>Deutschland</h3>
+                    </a>
+
+                    <div class="tags">
+                        <span class="tag">
+                            Persönliche Website
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <a href="https://www.moczart.com" target="_blank" rel="noopener noreferrer">
+                        <h3>Magyarország</h3>
+                    </a>
+
+                    <div class="tags">
+                        <span class="tag">
+                            Személyes weboldal
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                © 2026 MóczArt | Minden jog fenntartva.
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
